@@ -25,12 +25,3 @@
     <strong>Responsividade ao Website</strong>: O SIGA original não possui nenhum tipo de responsividade. Vendo esse problema, faremos com que o TCC SIGA se torne responsivo, causando facilidade no acesso e uso do disposito móvel (smartphone ou tablet).
   </li>
 </ul>
-<h2>
-  Telas Principais
-</h2>
-<h1>
-  Em Desenvolvimento
-</h1>
-<h1>
-  Siga
-</h1>
