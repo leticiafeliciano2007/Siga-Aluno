@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siga - Boletim</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./IMG/logo-cps.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style_horario.cs">
+    <link rel="stylesheet" href="CSS/style_boletim.css">
+    <link rel="stylesheet" href="CSS/style_global.css">
+    <link rel="stylesheet" href="CSS/style_global_resp.css">
+
+    <!-- Box Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <main>
+        <div id="nome_pagina">
+            <h1>Boletim</h1>
+        </div>
+
+        <div id="container-materia">
+
+            <div class="container">
+                <!-- Seletor de ano acima da tabela -->
+                <div class="ano-seletor">
+                    <label for="ANO_ALUNO">Selecione o Ano:</label>
+                    <select id="ANO_ALUNO">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+
+                    <div class="info-sala">
+                        <span class="info-label">Sala:</span> <span>B</span>
+                        <span class="info-label">Turno:</span> <span>Manhã</span>
+                        <span class="info-label">Locação:</span> <span>Sede</span>
+                    </div>
+
+                </div>
+
+                <table id="tabela-materia">
+                    <thead>
+                        <tr>
+                            <th>Componentes Curriculares</th>
+                            <th>C.H.</th>
+                            <th>Freq(%)</th>
+                            <th>1ª Sínt.</th>
+                            <th>2ª Sínt.</th>
+                            <th>3ª Sínt.</th>
+                            <th>4ª Sínt.</th>
+                            <th>Sínt. Final</th>
+                            <th>Res. F.</th>
+                        </tr>
+                    </thead>
+                    <tbody id="boletim-body">
+
+                    </tbody>
+                </table>
+
+                <!-- Legendas do boletim-->
+                <div id="legenda">
+                    <p class="nome_pagina"><strong>Legenda:</strong></p>
+
+                    <div id="container_legenda">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><span class="titulo">C.H.:</span> Carga horária</td>
+                                    <td><span class="titulo">Freq(%):</span> Frequência em %</td>
+                                    <td><span class="titulo">Sínt.:</span> Síntese</td>
+                                    <td><span class="titulo">Res. F.:</span> Resultado Final</td>
+                                    <td><span class="titulo">MB:</span> Muito Bom</td>
+                                    <td><span class="titulo">B:</span> Bom</td>
+                                    <td><span class="titulo">R:</span> Regular</td>
+                                    <td><span class="titulo">I:</span> Insatisfatório</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/script_header.js"></script>
+    <script src="JS/script_boletim.js"></script>
+    <script src="JS/script_contato.js"></script>
+</body>
+
+</html>

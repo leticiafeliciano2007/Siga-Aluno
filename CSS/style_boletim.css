@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    padding-top: 150px;
+}
+
+#nome_pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+#container-materia {
+    width: 75%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    border-radius: 8px;
+    margin: 2% auto;
+}
+
+.ano-seletor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ano-seletor label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ano-seletor select {
+    padding: 5px 8px;
+    font-size: 1em;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: 0.3s;
+}
+
+#tabela-materia {
+    width: 100%;
+    /* Largura uniforme */
+    border-collapse: collapse;
+}
+
+#tabela-materia th,
+#tabela-materia td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabela-materia th {
+    background-color: #8f0000;
+    color: white;
+}
+
+#tabela-materia td {
+    background-color: #fff;
+}
+
+#tabela-materia tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Ajuste para as larguras das colunas */
+#tabela-materia th:nth-child(1),
+#tabela-materia td:nth-child(1) {
+    width: 15%;
+    /* Proporção maior para os Componentes Curriculares */
+}
+
+#tabela-materia th:nth-child(n+2),
+#tabela-materia td:nth-child(n+2) {
+    width: 7%;
+    /* Proporção igual para as outras colunas */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#legenda {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#container_legenda {
+    width: 100%;
+}
+
+#container_legenda td {
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container_legenda .titulo {
+    color: #8f0000;
+}
+
+.info-sala {
+    display: flex;
+    gap: 5%;
+    margin-left: 5%; 
+    align-items: center; /* centraliza verticalmente */
+    font-weight: bold;
+    color: #333;
+}
+
+.info-label {
+    color: #8f0000; 
+    font-weight: bold; 
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    
+    #container-materia{
+        width: 100%;
+    }
+
+    .container{
+        font-size: small;
+    }
+
+    #legenda{
+        font-size: 12px;
+        justify-items: center;
+    }
+
+    .ano-seletor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-sala{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px){
+    #Contato{
+        display: flex;
+        align-items: flex-start;
+        padding: 2rem 2rem;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    
+
+    .logo img{
+        width: 9vh;
+        display: block;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .logo_cps img{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+        margin: 2%;
+    }
+    
+    #Cabecalho{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-itens-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-itens-mobile ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-itens-mobile ul li{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .text-nav-itens {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .nav-sub-itens-mobile{
+        width: 100%;
+    }
+
+    .nav-sub-itens-mobile ul{
+        width: 100%;
+        height: auto;
+
+        background-color: #8a0d0d;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-sub-itens-mobile ul li{
+        height: 50px;
+        width: 100%;
+    }
+
+    .nav-sub-itens-mobile {
+        display: none;
+    }
+    
+    .nav-sub-itens-mobile.active {
+        display: block;
+    }
+}
+

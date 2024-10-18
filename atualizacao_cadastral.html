@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siga - Atualização Cadastral</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./IMG/logo-cps.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style_atualizacao_cadastral.css">
+    <link rel="stylesheet" href="CSS/style_global.css">
+    <link rel="stylesheet" href="CSS/style_global_resp.css">
+
+    <!-- Box Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div id="nome_pagina">
+            <h1>Atualização de Cadastral</h1>
+        </div>
+        <div class="container">
+            <p>Seus dados pessoais necessitam de atualização no sistema. Favor realizar as confirmações abaixo.</p>
+
+            <div class="question">
+                <p>O endereço abaixo está correto?</p>
+                <p id="endereco_atual">Rua: rua, 000<br>Bairro: bairro - cidade<br>CEP: 00000-000</p>
+                <div class="options">
+                    <label><input type="radio" name="endereco" value="sim"> Sim</label>
+                    <label><input type="radio" name="endereco" value="nao"> Não</label>
+                </div>
+                <div id="novoEndereco" style="display:none;">
+                    <input type="text" id="novaRua" placeholder="Nova Rua">
+                    <input type="text" id="novoNumero" placeholder="Novo Número">
+                    <input type="text" id="novoBairro" placeholder="Novo Bairro">
+                    <input type="text" id="novaCidade" placeholder="Nova Cidade">
+                    <input type="text" id="novoCEP" placeholder="Novo CEP">
+                </div>
+            </div>
+
+            <div class="question">
+                <p>O e-mail abaixo é o que mais utiliza?</p>
+                <p id="email_atual">emailAluno@gmail.com</p>
+                <div class="options">
+                    <label><input type="radio" name="email" value="sim"> Sim</label>
+                    <label><input type="radio" name="email" value="nao"> Não</label>
+                </div>
+                <div id="novoEmailCampo" style="display:none;">
+                    <input type="email" id="novoEmail" placeholder="Novo E-mail">
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Caso haja algum telefone errôneo na lista abaixo, por favor selecione para que seja deletado.</p>
+                <p>Telefones:</p>
+                <ul id="telefones_lista">
+                    <li>
+                        <label><input type="checkbox" name="telefone" value="mae"> (00) 00000-0000/responsável - (Telefone
+                            Celular)</label>
+                    </li>
+                </ul>
+                <p>Deseja incluir um novo telefone?</p>
+                <div class="options">
+                    <label><input type="radio" name="novoTelefone" value="sim"> Sim</label>
+                    <label><input type="radio" name="novoTelefone" value="nao"> Não</label>
+                </div>
+                <div id="incluirTelefone" style="display:none;">
+                    <input type="text" id="novoTelefone" placeholder="Novo Telefone">
+                    <input type="text" id="responsavelTelefone" placeholder="Responsável (Mãe, Pai, etc.)">
+                </div>
+            </div>
+
+            <button id="confirmar">Confirmar Atualização</button>
+        </div>
+    </main>
+    <script src="JS/script_header.js"></script>
+    <script src="JS/script_atualizacao_cadastral.js"></script>
+    <script src="JS/script_contato.js"></script>
+</body>
+
+</html>

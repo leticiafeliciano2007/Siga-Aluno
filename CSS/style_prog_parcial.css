@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    padding-top: 150px;
+}
+
+#nome_pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+#container-atividades {
+    width: 75%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    border-radius: 8px;
+    margin: 2% auto;
+}
+
+#tabela-atividades {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabela-atividades th,
+#tabela-atividades td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#legenda {
+    text-align: center;
+    margin-top: 25px;
+    width: 75%; /* Mantém a mesma largura que a tabela */
+    margin: 25px auto; /* Centraliza a legenda */
+    background-color: #ffffff; /* Fundo branco para a legenda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra semelhante à tabela */
+    padding: 2%; /* Adiciona espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10%;
+}
+
+#container_legenda {
+    width: 100%;
+    text-align: center; /* Centraliza o conteúdo do container */
+}
+
+#container_legenda table,
+#tabela-atividades {
+    width: 100%; /* Largura 100% para ambas as tabelas */
+    border-collapse: collapse;
+}
+
+#container_legenda table {
+    margin: 10px auto; /* Espaçamento entre as tabelas */
+}
+
+#container_legenda td,
+#container_legenda th {
+    width: 25%;
+}
+
+#tabela-atividades td,
+#container_legenda td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabela-atividades th {
+    background-color: #8f0000;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#tabela-atividades td {
+    background-color: #fff;
+}
+
+#tabela-atividades tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Ajuste para as larguras das colunas */
+#tabela-atividades th,
+#tabela-atividades td {
+    width: 10%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    
+    #container-atividades{
+        font-size: 8px;
+        width: 98%;
+    }
+
+    #legenda{
+        width: 98%;
+        font-size: 12px;
+    }
+}
